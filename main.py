@@ -6,18 +6,14 @@ def main():
     
     while total <= 100:
         num = random.randint(1, 100)
-        if total + num > 100:
-            break
         numbers.append(num)
         total += num
-
+    
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
-
-    ########################################
-    # Do not delete the return statement
-    ########################################
+    
     return numbers, total
 
 if __name__ == '__main__':
     main()
+
