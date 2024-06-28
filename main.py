@@ -6,6 +6,8 @@ def main():
     
     while total <= 100:
         num = random.randint(1, 100)
+        if total + num > 100:
+            break
         numbers.append(num)
         total += num
     
